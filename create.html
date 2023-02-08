@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       
+        .threelines {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(196, 183, 183);
+            margin: 6px 0;
+            margin-left: 20px;
+        }
+
+        #listitems li {
+            list-style: none;
+            margin: 30px 0px;
+
+        }
+
+        #menuicon {
+            height: 40px;
+
+        }
+
+        #listitems li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            height: 100px;
+            overflow: auto;
+            font-weight: bold;
+        }
+
+        #listitems {
+            background-color: orange;
+            width: 150px;
+            height: 1100px;
+            overflow: auto;
+            margin-top: 5px;
+        }
+
+        #navbar #menuicon {
+            border-bottom: 2px solid rgb(92, 88, 88);
+            box-shadow: 0px 5px rgb(124, 122, 122);
+
+        }
+
+        #navbar #menuicon #title {
+            position: absolute;
+            left: 80px;
+            margin-top: -30px;
+        }
+
+        #body {
+            display: flex;
+            float: left;
+            list-style: none;
+            margin-top: -680px;
+            height: 70px;
+            margin-left: 150px;
+        }
+
+        #body li {
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        #body li button {
+            border: 2px solid rgb(131, 129, 129);
+            border-radius: 10px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            background: none;
+        }
+
+        #body li button:hover {
+            background-color: antiquewhite;
+        }
+
+        #body li select:hover {
+            background-color: antiquewhite;
+        }
+
+        #body li select {
+            border: 2px solid rgb(131, 129, 129);
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            color: rgb(35, 36, 36);
+            font-weight: bold;
+            text-align: center;
+            margin-top: 18px;
+
+        }
+
+        #body li select option {
+            font-weight: bold;
+        }
+
+        #body li input {
+            border: 2px solid rgb(131, 129, 129);
+            border-radius: 10px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        body{
+            
+            height: 1020px;
+        }
+        
+
+        #form {
+            margin-left: 5%;
+            position: relative;
+            bottom: 1080px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-bottom: 0;
+            
+        }
+
+        #form input {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            height: 30px;
+            width: 400px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid rgb(179, 173, 173);
+            
+        }
+        #form label{
+            color: rgb(160, 154, 154);
+        }
+        #submit {
+            background: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            border: 2px solid blue;
+        }
+
+        
+        #gridbutton {
+            position: absolute;
+            top: 30px;
+            right: 5px;
+        }
+
+        #tablebutton {
+            position: absolute;
+            top: 30px;
+            right: 5px;
+        }
+
+        .mygriddiv {
+            display: inline-block;
+            vertical-align: middle;
+            width: 300px;
+            height: auto;
+            box-shadow: 5px 5px rgb(116, 113, 113);
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+       
+       
+        .btnclass {
+            color: rgb(78, 75, 75);
+        }
+
+        .btnclass:hover {
+            color: black;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+        <div id="menuicon">
+            <!--<div class="threelines" id="one" onclick="myfunc()" ></div>
+            <div class="threelines" id="two" oncli ck="myfunc()"></div>
+            <div class="threelines" id="three" onclick="myfunc()"></div>-->
+            <div class="threelines" style="background: none;"><button id="menubarbutton" onclick="myfunc()"
+                    style="background: none; border: none; position: relative; left: -20px; top: 2px; height: 30px; width: 30px;  "><img
+                        src="menu-regular-24.png" alt="" id="imgsrc" width="40px" height="40px"></button></div>
+            <h2 id="title" style="color: orange; ">Contacts</h3>
+                <input type="search" style="position: absolute; top: 10px; left: 40%; width: 400px; height: 30px;"
+                    placeholder="search">
+                <button
+                    style="position: absolute; top: 5px; right: 150px; font-weight: lighter; color: rgb(134, 130, 130); font-size: 40px; background: none; border: none;">+</button>
+                <select name="" id=""
+                    style="position: absolute; top: 15px; right: 50px;  border: none; border-left: 1px solid rgb(126, 123, 123); font-size: 20px;">
+                    <option value=""> dheeraj</option>
+                    <option value=""> Rohan</option>
+                </select>
+                <button style="position: absolute; top: 12px; right: 0; background: none; border: none;"><img
+                        src="settings-removebg-preview.png" width="30px" height="30px" alt=""></button>
+        </div>
+        <div id="listitems" style="width: 50px;">
+            <ul>
+                <li class="li"><a href="#" id="aone" style="display: none;  " class="atag"><i class='bx bxs-home bx-sm' id="iconone"></i>   Home</a></li>
+                <li class="li"><a href="#" id="atwo" style="display: none; " class="atag"><i class='bx bxs-message-square bx-sm' id="icontwo"></i>  About</a>
+                </li>
+                <li class="li"><a href="#" id="athree" style="display: none;" class="atag"><i class='bx bxs-contact bx-sm'  id="iconthree"></i>  Contact</a></li>
+                <li class="li"><a href="#" id="afour" style="display: none;" class="atag"> <i class='bx bxs-report bx-sm' id="iconfour"></i>   Report</a></li>
+            </ul>
+        </div>
+    </div>
+   
+        <div id="form" >
+            <h1 style="font-weight:lighter;">Add Contact</h1>
+            <form action="">
+                <label for="">Name</label><br>
+                <input type="text" id="name"><br>
+                <label for="">Title</label><br>
+                <input type="text" id="title"><br>
+                <label for="">Organization</label><br>
+                <input type="text" id="organization"><br>
+                <label for="">City</label><br>
+                <input type="text" id="city"><br>
+                <label for="">Mobile</label><br>
+                <input type="number" id="number"><br>
+                <label for="">Email</label><br>
+                <input type="email" id="email"><br>
+                <label for="">Group</label><br>
+                <input type="text" id="group"><br>
+                <label for="">Date</label><br>
+                <input type="date" id="date"><br>
+                <label for="">Gender</label><br>
+                Male <input type="radio" id="male" name="gender" style="width: 20px; height: 20px;">
+                female:<input type="radio" id="female" name="gender" style="width: 20px; height: 20px;"><br>
+                <div>
+                    <label for="">Description</label><br>
+                    <textarea name="" id="textarea" cols="60" rows="10"></textarea><br>
+                </div>
+                <input type="button" name="submit" value="submit" id="submit"
+                style="width: 100px; text-align: center; width: 80px; height: 40px;">
+            </form>
+        </div>
+    <script>
+       var submit = document.getElementById('submit')
+       submit.addEventListener('click',function(e){
+        window.open('Home.html')
+       })
+       
+        function myfunc() {
+            // menubutton.addEventListener('click',function(e){
+            if (document.getElementById('listitems').style.width =="50px") {
+                document.getElementById('listitems').style.width = "150px"
+                //document.getElementById('listitems').style.transition = "width 0.5s"
+                document.getElementById('aone').style.display = ""
+                document.getElementById('atwo').style.display = ""
+                document.getElementById('athree').style.display = ""
+                document.getElementById('afour').style.display = ""
+                document.getElementById('form').style.marginLeft="20%"
+            }
+            else {
+                document.getElementById('listitems').style.width = "50px"
+                //document.getElementById('listitems').style.transition = "1s"
+                document.getElementById('aone').style.display = "none"
+                document.getElementById('atwo').style.display = "none"
+                document.getElementById('athree').style.display = "none"
+                document.getElementById('afour').style.display = "none"
+                document.getElementById('iconone').style.display=""
+                document.getElementById('icontwo').style.display=""
+                document.getElementById('iconthree').style.display=""
+                document.getElementById('iconfour').style.display=""
+                document.getElementById('form').style.marginLeft="5%"
+                
+            }
+            // })
+        }
+      
+        
+    </script>
+</body>
+
+</html>
